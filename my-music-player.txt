@@ -1,0 +1,85 @@
+my-music-player/
+│
+├── mobile/
+│   ├── src/
+│   │   ├── features/
+│   │   │   ├── player/
+│   │   │   │   ├── PlayerScreen.tsx           # PANTALLA PRINCIPAL del reproductor
+│   │   │   │   ├── PlayerControls.tsx         # SOLO los botones (play, next, prev)
+│   │   │   │   ├── ProgressBar.tsx            # Barra de progreso
+│   │   │   │   ├── PlayerArtwork.tsx          # Imagen del album/video
+│   │   │   │   └── MiniPlayer.tsx             # Player pequeño flotante
+│   │   │   │
+│   │   │   ├── search/
+│   │   │   │   ├── SearchScreen.tsx           # PANTALLA de búsqueda
+│   │   │   │   ├── SearchBar.tsx              # Input de búsqueda
+│   │   │   │   └── SearchResultItem.tsx       # Item individual de resultado
+│   │   │   │
+│   │   │   ├── library/
+│   │   │   │   ├── LibraryScreen.tsx          # PANTALLA de biblioteca
+│   │   │   │   ├── SongList.tsx               # Lista de canciones
+│   │   │   │   ├── PlaylistList.tsx           # Lista de playlists
+│   │   │   │   └── SongItem.tsx               # Item individual de canción
+│   │   │   │
+│   │   │   └── download/
+│   │   │       ├── DownloadScreen.tsx         # PANTALLA de descargas
+│   │   │       ├── DownloadItem.tsx           # Item de descarga
+│   │   │       └── DownloadProgress.tsx       # Progreso de descarga
+│   │   │
+│   │   ├── services/
+│   │   │   ├── player/
+│   │   │   │   ├── TrackPlayerService.ts      # Servicio principal del player
+│   │   │   │   ├── PlaybackModes.ts           # Modos: loop, shuffle, etc
+│   │   │   │   └── BackgroundService.ts       # Audio en background
+│   │   │   │
+│   │   │   ├── youtube/
+│   │   │   │   ├── YouTubeService.ts          # Cliente para tu API
+│   │   │   │   └── types.ts                   # Tipos de YouTube
+│   │   │   │
+│   │   │   ├── storage/
+│   │   │   │   ├── DatabaseService.ts         # SQLite
+│   │   │   │   ├── FileService.ts             # Sistema de archivos
+│   │   │   │   └── schemas.ts                 # Schemas de DB
+│   │   │   │
+│   │   │   └── download/
+│   │   │       ├── DownloadManager.ts         # Gestor de descargas
+│   │   │       └── DownloadQueue.ts           # Cola de descargas
+│   │   │
+│   │   ├── navigation/
+│   │   │   ├── AppNavigator.tsx               # Navegación principal
+│   │   │   └── types.ts                       # Tipos de navegación
+│   │   │
+│   │   ├── hooks/
+│   │   │   ├── usePlayer.ts                   # Hook del player
+│   │   │   ├── usePlaylist.ts                 # Hook de playlists
+│   │   │   └── useDownload.ts                 # Hook de descargas
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── formatTime.ts                  # Formatear tiempo
+│   │   │   └── constants.ts                   # Constantes
+│   │   │
+│   │   └── App.tsx                            # App principal
+│   │
+│   ├── android/
+│   │   └── app/
+│   │       └── src/
+│   │           └── main/
+│   │               ├── AndroidManifest.xml
+│   │               └── res/
+│   │
+│   ├── package.json
+│   └── tsconfig.json
+│
+└── laptop-server/                             # Backend en tu laptop
+    ├── src/
+    │   ├── server.ts                          # Servidor principal
+    │   ├── routes/
+    │   │   ├── search.ts                      # Ruta de búsqueda
+    │   │   ├── audio.ts                       # Ruta para obtener audio
+    │   │   └── download.ts                    # Ruta de descarga
+    │   │
+    │   └── services/
+    │       └── youtube.ts                     # Lógica de YouTube
+    │
+    ├── package.json
+    └── tsconfig.json

@@ -1,0 +1,33 @@
+// mobile/package.json
+{
+  "name": "personal-music-player",
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.73.2",
+    
+    // Reproductor de audio en background
+    "react-native-track-player": "^4.0.1",
+    
+    // Video player (opcional, para mostrar video)
+    "react-native-video": "^6.0.0",
+    
+    // Base de datos local
+    "react-native-quick-sqlite": "^8.0.0",
+    
+    // Sistema de archivos
+    "react-native-fs": "^2.20.0",
+    
+    // Gestor de descargas
+    "rn-fetch-blob": "^0.12.0",
+    
+    // Extractor de YouTube (sin API key)
+    "ytdl-core": "^4.11.5",  // O mejor aún, usa tu laptop
+    
+    // UI
+    "react-native-vector-icons": "^10.0.3",
+    "@react-navigation/native": "^6.1.9",
+    
+    // Control de pantalla
+    "react-native-keep-awake": "^4.0.0"
+  }
+}
